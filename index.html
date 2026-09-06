@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <title>VIP SURESHOT</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1965778234103851');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1965778234103851&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <meta name="theme-color" content="#0B132B">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0B132B 0%, #0F172A 50%, #000000 100%);
+            --card-bg: rgba(15, 23, 42, 0.6);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --text-main: #ffffff;
+            --text-muted: #94a3b8;
+            --primary: #00B4D8;
+            --primary-hover: #0096C7;
+            --primary-glow: rgba(0, 180, 216, 0.5);
+            --font-body: 'Inter', system-ui, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: var(--font-body);
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            color: var(--text-main);
+        }
+
+        .wrap {
+            position: relative;
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 40px 24px 24px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .avatar-stage {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            flex-shrink: 0;
+            margin-bottom: 5px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, #00B4D8, #0077B6);
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0B132B;
+            background: #1e293b;
+        }
+
+        h1.channel-name {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #e2e8f0;
+            font-weight: 600;
+            margin-top: -15px;
+            margin-bottom: 5px;
+        }
+
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #f8fafc;
+        }
+
+        .feature-icon {
+            font-size: 18px;
+        }
+
+        @keyframes pulse-btn {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 10px 25px -5px var(--primary-glow), 0 0 15px var(--primary-glow);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 15px 35px -5px var(--primary-glow), 0 0 35px var(--primary-glow);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 10px 25px -5px var(--primary-glow), 0 0 15px var(--primary-glow);
+            }
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px 20px;
+            border-radius: 100px; /* Pill shape */
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px -5px var(--primary-glow), 0 0 15px var(--primary-glow);
+            color: #ffffff;
+            background: linear-gradient(135deg, #00B4D8 0%, #0077B6 100%);
+            animation: pulse-btn 2s infinite;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px -5px var(--primary-glow), 0 0 20px var(--primary-glow);
+            background: linear-gradient(135deg, #0096C7 0%, #023E8A 100%);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        .timer-box {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 24px;
+            border-radius: 100px;
+            font-family: monospace;
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 2px;
+            margin: 5px 0;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .secondary-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        
+        .secondary-link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .disclaimer-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 15px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .disclaimer-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #cbd5e1;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .disclaimer-text {
+            font-size: 11px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .footer-text {
+            font-size: 11px;
+            color: rgba(148, 163, 184, 0.6);
+            margin-top: 10px;
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                padding: 30px 20px 20px;
+                border-radius: 20px;
+            }
+
+            .avatar-stage {
+                width: 100px;
+                height: 100px;
+            }
+
+            h1.channel-name {
+                font-size: 24px;
+            }
+            
+            .btn {
+                font-size: 16px;
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <div class="avatar-stage">
+                <img src="diva.png" alt="VIP SURESHOT" class="avatar-img" loading="eager" onerror="this.src='diva.jpg'">
+            </div>
+
+            <h1 class="channel-name">VIP SURESHOT 🔥</h1>
+            <div class="subtitle">🔥 Premium Telegram Channel</div>
+
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="feature-icon">💸</span> Daily Premium Updates
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🚀</span> Fast Join Access
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span> Trusted Community
+                </div>
+            </div>
+
+            <a href="https://t.me/+S-PVvpG1osgxNmM1" class="btn" target="_blank" rel="noopener" onclick="fbq('track', 'Subscribe');">
+                ✈️ Join Free Telegram ✈️
+            </a>
+
+            <div class="timer-box" id="timerDisplay">
+                00:15
+            </div>
+
+            <a href="https://t.me/+S-PVvpG1osgxNmM1" class="secondary-link" target="_blank" rel="noopener" onclick="fbq('track', 'Subscribe');">
+                Tap here to Join now
+            </a>
+
+            <div class="disclaimer-card">
+                <div class="disclaimer-title">Disclaimer</div>
+                <div class="disclaimer-text">
+                    This page is for informational purposes only. Telegram is a third-party platform; please review all channel content independently before acting on it.
+                </div>
+            </div>
+
+            <div class="footer-text">
+                © 2026 VIP SURESHOT. All rights reserved.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Set the countdown time in seconds
+        let timeLeft = 15;
+        const targetUrl = "https://t.me/+S-PVvpG1osgxNmM1";
+        const timerDisplay = document.getElementById('timerDisplay');
+
+        function updateDisplay(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            timerDisplay.textContent = `0${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+
+        // Initialize display
+        updateDisplay(timeLeft);
+
+        // Update the countdown every 1 second
+        const timer = setInterval(function () {
+            timeLeft--;
+            updateDisplay(timeLeft);
+
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                window.location.href = targetUrl;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
